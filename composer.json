@@ -1,0 +1,14 @@
+{
+  "require": {
+    "php": "^8.0",
+    "ext-json": "*",
+    "ext-ctype": "*",
+    "ext-mbstring": "*",
+    "ext-memcached": "*",
+    "ext-redis": "^5.2.1",
+    "cheprasov/php-redis-client": "^1.10"
+  },
+  "autoload": {
+    "psr-4": { "App\\": "src/" }
+  }
+}

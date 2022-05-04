@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[@title]</title>
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css">
+</head>
+<body>
+    <h3 class="mt-5 text-center">[@header]</h3>
+    <div class="col-lg-6 offset-lg-3 mt-5">
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <button type="button" class="btn btn-secondary" onclick="generate()">[@generate]</button>
+            </div>
+            <div class="col-auto">
+                <label for="key">
+                    <input type="text" id="key" class="form-control" aria-describedby="keyHelpInline" placeholder="[@placeholder]">
+                </label>
+            </div>
+            <div class="col-auto">
+                <span id="keyHelpInline" class="form-text">
+                  [@info]
+                </span>
+            </div>
+            <div class="m-1">
+                <label for="value" class="form-label">[@value]</label>
+                <textarea class="form-control" id="value" rows="3"></textarea>
+                <div class="mt-3">
+                    <button type="button" class="btn btn-primary mb-3" onclick="add()">[@button]</button>
+                    <span id="notice" class="m-lg-2 form-text"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="items" class="col-lg-6 offset-lg-3 mt-5"></div>
+</body>
+<script src="/public/js/app.js"></script>
+</html>
